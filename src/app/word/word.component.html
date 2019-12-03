@@ -1,2 +1,4 @@
-<h3>{{ en }}</h3>
+<h3 [hidden]="forgot">{{ en }}</h3>
 <p> {{ vn }}</p>
+<img [src]="imageUrl" alt="">
+<button class="btn btn-success" (click)="toggleForgot()" >Toggle forgot</button>
