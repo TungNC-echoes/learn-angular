@@ -1,2 +1,5 @@
-<input placeholder="User Form" (keyup) = "showEvent($event)">
-<h3>Your name is: {{ name }}</h3>
+<input placeholder="User Form" [(ngModel)]="name" #txtUserName>
+<h3 [style.color]="inHightLight? 'red' : 'black'">Your name is: {{ name }}</h3>
+<code>{{ txtUserName.value | json}}</code>
+<div [class] = "inHightLight? 'circle' : 'square'"></div>
+<div [class.circle]="!inHightLight" [class.square]="inHightLight"></div>
