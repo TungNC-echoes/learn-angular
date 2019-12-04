@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
   name = '';
-  inHightLight = false;
+  eventStyle = { color: 'red', fontSize: '30px' };
+  oddStyle = { color: 'blue', fontSize: '10px' };
+  inHightLight = true;
+  currentClass = { square: !this.inHightLight, circle: this.inHightLight };
   constructor() { }
-
   ngOnInit() {
   }
 }
